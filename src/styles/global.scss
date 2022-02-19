@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --gray-100: #f9f9f9;
+  --gray-150: #ededed;
+  --gray-300: #a5a5a5;
+
+  --black-900: #111111;
+}
+
+button {
+  cursor: pointer;
+}

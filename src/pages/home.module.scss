@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  width: 500px;
+  background: var(--gray-100);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 50px 0 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .checkboxContainer {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contentImage {
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/background.jpg");
+  height: 100vh;
+}
