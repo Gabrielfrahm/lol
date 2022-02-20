@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "./home.module.scss";
+// import { useForm } from "react-hook-form";
+import { InputAuth } from "../components/input";
 
 const Home: NextPage = () => {
   return (
@@ -12,8 +14,8 @@ const Home: NextPage = () => {
             <h1>Sign in</h1>
             <form>
               <div className={styles.form}>
-                <input />
-                <input />
+                <InputAuth />
+                <InputAuth />
                 <div className={styles.buttonContainer}>
                   <button>face</button>
                   <button>google</button>
