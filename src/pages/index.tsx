@@ -14,8 +14,8 @@ const Home: NextPage = () => {
             <h1>Sign in</h1>
             <form>
               <div className={styles.form}>
-                <InputAuth />
-                <InputAuth />
+                <InputAuth name="username" type="text" nameLabel="USERNAME" />
+                <InputAuth name="password" type="text" nameLabel="PASSWORD" />
                 <div className={styles.buttonContainer}>
                   <button>face</button>
                   <button>google</button>

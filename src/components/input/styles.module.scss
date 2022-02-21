@@ -3,11 +3,38 @@
   height: 50px;
   margin-bottom: 20px;
   border-radius: 5px;
-}
+  position: relative;
 
-.input {
-  border: 0;
-  background: transparent;
-  width: 100%;
-  height: 100%;
+  input {
+    border: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -webkit-appearance: none;
+  }
+
+  label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 14px);
+    left: 15px;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  input::placeholder {
+    color: transparent;
+  }
+
+  input:focus + label {
+    font-size: 13px;
+    top: 0;
+  }
 }

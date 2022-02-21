@@ -1,9 +1,16 @@
 import styles from "./styles.module.scss";
 
-export const InputAuth = () => {
+interface InputAuthProps {
+  type: string;
+  name: string;
+  nameLabel: string;
+}
+
+export const InputAuth = ({ name, nameLabel, type }: InputAuthProps) => {
   return (
     <div className={styles.container}>
-      <input className={styles.input} type="text" />
+      <input type={type} name={name} />
+      <label>{nameLabel}</label>
     </div>
   );
 };
