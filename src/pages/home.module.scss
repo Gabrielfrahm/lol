@@ -27,6 +27,7 @@
     text-align: center;
     font-size: 1.5rem;
     margin: 50px 0 20px;
+    font-weight: bold;
   }
 
   .form {
@@ -37,6 +38,15 @@
   .buttonContainer {
     display: flex;
     justify-content: space-between;
+
+    button {
+      width: 95px;
+      height: 2rem;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .checkboxContainer {

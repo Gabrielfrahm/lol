@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./home.module.scss";
 // import { useForm } from "react-hook-form";
 import { InputAuth } from "../components/input";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Home: NextPage = () => {
   return (
@@ -15,9 +16,15 @@ const Home: NextPage = () => {
             <form>
               <div className={styles.form}>
                 <InputAuth name="username" type="text" nameLabel="USERNAME" />
-                <InputAuth name="password" type="text" nameLabel="PASSWORD" />
+                <InputAuth
+                  name="password"
+                  type="password"
+                  nameLabel="PASSWORD"
+                />
                 <div className={styles.buttonContainer}>
-                  <button>face</button>
+                  <button>
+                    <FaFacebookSquare />
+                  </button>
                   <button>google</button>
                   <button>apple</button>
                 </div>
