@@ -9,6 +9,7 @@
   --gray-100: #f9f9f9;
   --gray-150: #ededed;
   --gray-300: #a5a5a5;
+  --gray-500: #f9f9f9;
 
   --black-900: #111111;
 }
@@ -21,6 +22,7 @@ body,
 input,
 textarea,
 select,
+p,
 button {
   font: 400 1rem "Roboto", sans-serif;
 }

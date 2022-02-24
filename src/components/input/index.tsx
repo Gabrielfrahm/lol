@@ -11,7 +11,12 @@ export const InputAuth = ({ name, nameLabel, type }: InputAuthProps) => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className={styles.container}>
-      <input type={showPassword ? "text" : type} name={name} placeholder=" " />
+      <input
+        type={showPassword ? "text" : type}
+        name={name}
+        placeholder=" "
+        autoComplete="off"
+      />
       <label>{nameLabel}</label>
       {type === "password" &&
         (!showPassword ? (
